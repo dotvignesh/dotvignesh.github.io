@@ -1,0 +1,26 @@
+/* .vertical-center {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+} */
+
+.navbar-brand {
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.profile {
+    height: 320px;
+    width: 320px;
+}
+
+.landing {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.about {
+    padding-left: 75px;
+    padding-right: 75px;
+}
