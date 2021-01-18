@@ -30,3 +30,7 @@ a {
     font-size: 1.4em;
     color: #2D3878;
 }
+
+a:hover {
+    color: #F44336;
+}
