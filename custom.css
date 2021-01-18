@@ -24,3 +24,9 @@
     padding-left: 75px;
     padding-right: 75px;
 }
+
+a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #2D3878;
+}
