@@ -1,8 +1,7 @@
-/* .vertical-center {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-} */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .navbar-brand {
     font-size: 1.5em;
@@ -21,16 +20,20 @@
 }
 
 .about {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: #111111;
+    color: white;
 }
 
 a {
     text-decoration: none;
     font-size: 1.4em;
-    color: #2D3878;
+    color: #2196F3;
 }
 
 a:hover {
-    color: #F44336;
+    color: white;
 }
