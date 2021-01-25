@@ -7,20 +7,16 @@
     font-size: 1.5em;
     padding-left: 10px;
     padding-top: 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-/* .profile {
-    height: 320px;
-    width: 320px;
-} */
-
-.about {
+.custom-padding {
     padding-top: 75px;
     padding-bottom: 75px; 
+}
+
+.about {
     background-color: #111111;
     color: white; 
-    font-family: 'Courier New', Courier, monospace;
 }
 
 a {
@@ -33,12 +29,7 @@ a:hover {
     color: white;
 }   
 
-.skills {
-    padding-top: 75px;
-    padding-bottom: 75px; 
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.owl-carousel {
+.space{
     padding-top: 40px;
 }
+
