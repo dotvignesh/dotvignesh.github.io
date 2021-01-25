@@ -37,3 +37,11 @@ a:hover {
     background-color: #111111;
     color: white; 
 }
+
+.footer {
+    padding-left: 10px;
+}
+
+.footer a:hover {
+    color: #111111;
+}
