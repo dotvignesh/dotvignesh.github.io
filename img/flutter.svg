@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 250 325">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="New" value="1"/>
+</metadata>
+<defs>
+<linearGradient y1="1930.74" id="LinearGradient" x1="-2115" y2="1929.74" x2="-2115" gradientUnits="userSpaceOnUse" gradientTransform="matrix(26.4678 -26.4687 -3.69488 -3.69474 63251.9 -48672.9)">
+<stop stop-opacity="0.15" stop-color="#000000" offset="0.2"/>
+<stop stop-opacity="0.01" stop-color="#616161" offset="0.85"/>
+</linearGradient>
+<linearGradient y1="1946.36" id="LinearGradient_2" x1="-2115.27" y2="1946.36" x2="-2114.27" gradientUnits="userSpaceOnUse" gradientTransform="matrix(39.3319 0 0 -26.5063 83322.8 51765.7)">
+<stop stop-opacity="0.55" stop-color="#000000" offset="0.2"/>
+<stop stop-opacity="0.01" stop-color="#616161" offset="0.85"/>
+</linearGradient>
+</defs>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<text x="0" font-family="CourierNewPSMT" y="0" text-anchor="middle" vectornator:text="Flutter" fill="#111111" font-size="24" vectornator:width="251.908" opacity="1" transform="matrix(1 0 0 1 -1.23922 256.156)">
+<tspan x="125.954" y="20" textLength="100.816">
+Flutter</tspan>
+</text>
+<path d="M85.5612+148.552L59.052+122.043L145.127+35.9746L198.139+35.9746M198.139+115.398L145.127+115.398L125.269+135.256L151.779+161.765" fill-opacity="0.8" fill="#42a5f5" opacity="1"/>
+<path d="M125.269+188.267L145.127+208.125L198.139+208.125L151.779+161.765" opacity="1" fill="#0d47a1"/>
+<path d="M98.8228+161.779L125.29+135.304L151.758+161.772L125.29+188.246L98.8228+161.779Z" opacity="1" fill="#42a5f5"/>
+<path d="M125.29+188.246L151.758+161.779L155.452+165.473L128.985+191.941L125.29+188.246Z" opacity="1" fill="url(#LinearGradient)"/>
+<path d="M125.269+188.267L164.602+174.679L151.779+161.758" opacity="1" fill="url(#LinearGradient_2)"/>
+</g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 250 325">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="New" value="1"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<text x="0" font-family="CourierNewPSMT" y="0" text-anchor="middle" vectornator:text="Firebase" fill="#111111" font-size="24" vectornator:width="251.908" opacity="1" transform="matrix(1 0 0 1 2.38165 259.777)">
+<tspan x="125.954" y="20" textLength="115.219">
+Firebase</tspan>
+</text>
+<path d="M145.225+76.0245L129.906+90.2879L115.686+61.5933L123.032+45.0944C124.889+41.8033+127.925+41.7599+129.782+45.0944L145.225+76.0245Z" opacity="1" fill="#ffa000"/>
+<path d="M129.912+90.2817L72.61+143.579L115.692+61.5933L129.912+90.2817Z" opacity="1" fill="#f57f17"/>
+<path d="M162.022+54.2101C164.767+51.5959+167.592+52.4776+168.306+56.191L183.203+142.858L133.793+172.522C132.061+173.49+127.466+173.869+127.466+173.869C127.466+173.869+123.287+173.36+121.685+172.478L72.61+143.579L162.022+54.2101Z" opacity="1" fill="#ffca28"/>
+<path d="M115.692+61.5933L72.61+143.579L91.8101+23.7458C92.5304+20.0324+94.6355+19.6537+96.5356+22.9447L115.692+61.5933Z" opacity="1" fill="#ffa000"/>
+</g>
+</svg>

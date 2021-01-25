@@ -31,4 +31,14 @@ a {
 
 a:hover {
     color: white;
+}   
+
+.skills {
+    padding-top: 75px;
+    padding-bottom: 75px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.owl-carousel {
+    padding-top: 40px;
 }
