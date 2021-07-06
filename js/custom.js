@@ -16,3 +16,9 @@ owl.owlCarousel({
         }
     }
 });
+
+ScrollReveal().reveal('.landing', { delay: 200 });
+ScrollReveal().reveal('.about', { delay: 200 });
+ScrollReveal().reveal('.edu', { delay: 200 });
+ScrollReveal().reveal('.tech-stack', { delay: 200 });
+ScrollReveal().reveal('.projects', { delay: 200 });

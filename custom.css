@@ -1,12 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+body {
+    background-color: rgb(12, 13, 15);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: rgb(238, 232, 241);
+}
+
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
-}
-
-.navbar-brand {
-    font-size: 1.5em;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 
 .custom-padding {
@@ -14,17 +18,17 @@
     padding-bottom: 75px; 
 }
 
-.about {
-    background-color: #111111;
-    color: white; 
+.font {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
 }
 
 .about a {
     text-decoration: none;
     font-size: 1.4em;
-    color: #2196F3;
+    color: #887BEC;
     background-clip: text;
-    background: linear-gradient(to right, white, white 50%, #2196F3 50%);
+    background: linear-gradient(to right, white, white 50%, #887BEC 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
@@ -37,24 +41,37 @@
     background-position: 0 100%;
 }   
 
+.btn-danger {
+    background-color: #887BEC;
+    border: none;
+}
+
 .space{
     padding-top: 40px;
 }
 
-.projects {
-    background-color: #111111;
-    color: white; 
+.design-footer {
+    background-color: #fff;
 }
 
 .footer {
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    background-color: #fff;
+    color: black;
 }
+
+
+.list-inline {
+    display: flex;
+    justify-content: center;
+}
+
 .footer a {
     text-decoration: none;
     font-size: 1.4em;
-    color: #2196F3;
+    color: #887BEC;
     background-clip: text;
-    background: linear-gradient(to right, black, black 50%, #2196F3 50%);
+    background: linear-gradient(to right, black, black 50%, #887BEC 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
@@ -64,4 +81,9 @@
 .footer a:hover {
     color: #111111;
     background-position: 0 100%;
+} 
+
+.wave {
+    bottom: 0;
+    left: 0;
 }
