@@ -41,9 +41,18 @@ body {
     background-position: 0 100%;
 }   
 
-.btn-danger {
+.btn {
     background-color: #887BEC;
     border: none;
+}
+
+.btn:hover {
+    background-color: #887becbe;
+}
+
+.disabled {
+    background-color: #887BEC;
+    color: #fff;
 }
 
 .space{
