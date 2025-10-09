@@ -1,300 +1,181 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
 
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="description"
+    content="Esakkivel Esakkiraja is an ML engineer and Northeastern grad student building SFT and RL post-training pipelines for reasoning systems, excited about applied AI and hands-on ML.">
+  <title>Esakkivel Esakkiraja</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script>
+    tailwind.config = { theme: { extend: { maxWidth: { content: '900px' } } } }
+  </script>
+  <link rel="stylesheet" href="css/site.css">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
 
-    <link href="custom.css" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
-
-    <title>Esakkivel Esakkiraja</title>
-
-    <!-- Paste this right before your closing </head> tag -->
-    <script type="text/javascript">
-        (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
-    </script>
+  <script type="text/javascript">
+      (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+  </script>
 </head>
 
-<body>
-
-    <div class="container-fluid">
-
-        <!-- Landing -->
-
-        <section class="home">
-
-            <div class="d-flex align-items-center vh-100">
-                <div class="container">
-                    <div class="row mx-auto">
-
-                        <div class="col-8 my-auto">
-                            <h1 class="display-3 name font">Esakkivel Esakkiraja</h1>
-                            <p class="lead">Student | Machine Learning Engineer | Passionate Builder</p>
-                        </div>
-
-                        <div class="col-4 my-auto">
-                            <img class="img-fluid rounded-circle" src="img/profile-pic-new.png">
-                        </div>
-
-                    </div>
-                </div>
-
-                <svg class="wave position-absolute hide-on-landscape visible-xs" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320">
-                    <path fill="#ffffff" fill-opacity="1"
-                        d="M0,256L60,256C120,256,240,256,360,224C480,192,600,128,720,128C840,128,960,192,1080,202.7C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                    </path>
-                </svg>
-            </div>
-
-        </section>
-
-
-        <section class="about custom-padding">
-
-            <div class="row mw-100 px-5 mx-auto">
-
-                <div class="col-md-8">
-                    <h3 class="display-4 font"> About Me </h3>
-                    <p class="lead">
-                        Hey there &#128075, <br /> My name is Esakkivel, and I'm an MS CS student at Northeastern University, Boston.
-                        <br /> Being inspired by movies &#x1F3AC;, I started playing around with computers &#x1F4BB; in
-                        my
-                        teenage, I
-                        built my first app at 13, and I've been passionate about computers ever since. <br />
-                    </p>
-                </div>
-
-                <div class="col-6 col-md-4 my-auto mx-auto text-center">
-                    <ul class="list-inline lead">
-                        <li class="list-inline-item"> <a class='bx bxl-linkedin-square'
-                                href="https://www.linkedin.com/in/esakkivel-esakkiraja/" target="_blank"
-                                rel="noopener noreferrer"></a> </li>
-                        <li class="list-inline-item"> <a class='bx bxl-github' href="https://github.com/dotvignesh"
-                                target="_blank" rel="noopener noreferrer"></a>
-                        </li>
-                        <li class="list-inline-item"> <a class='bx bxl-twitter' href="https://twitter.com/DotVignesh"
-                                target="_blank" rel="noopener noreferrer"></a>
-                        </li>
-                        <li class="list-inline-item"> <a class='bx bx-mail-send' href="mailto:esakkivelvrs5@gmail.com"
-                                target="_blank" rel="noopener noreferrer"></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="education custom-padding">
-
-            <div class="container edu">
-
-                <h3 class="display-4 font"> Education </h3>
-
-                <div class="row uni space">
-
-                    <div class="col-4 my-auto">
-                        <img class="img-fluid" src="img/neu.svg" alt="">
-                    </div>
-
-                    <div class="col-8 my-auto text-end">
-                        <h3 class="display-6">Northeastern University, Boston</h3>
-
-                        <p class="lead">
-                            Master of Science in Computer Science<br />
-                            2024-2026
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="row uni space">
-
-                    <div class="col-8 my-auto">
-                        <h3 class="display-6">College Of Engineering, Guindy</h3>
-
-                        <p class="lead">
-                            Bachelor of Engineering in Computer Science & Engineering<br />
-                            2020-2024
-                        </p>
-                    </div>
-
-                    <div class="col-4 my-auto">
-                        <img class="img-fluid" src="img/ceg.png" alt="" style="float: right;">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="work custom-padding">
-            <div class="container" id="work-experiences-container">
-                <h3 class="display-4 font"> Work </h3>
-                <!-- Work experiences will be injected here by JS -->
-            </div>
-        </section>
-
-        <section class="skills custom-padding">
-
-            <div class="container tech-stack">
-
-                <h3 class="display-4 font"> Tech Stack </h3>
-
-                <div class="owl-carousel owl-theme space">
-
-                    <div class="item">
-                        <img src="img/python.svg" width="64px" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/java.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/c.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/numpy.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/pandas.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/pytorch.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/html.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/css.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/js.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/dart.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/flutter.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/firebase.svg" alt="">
-                    </div>
-
-                    <div class="item">
-                        <img src="img/sql.svg" alt="">
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="projects custom-padding">
-            <div class="container projects" id="projects-container">
-                <h3 class="display-4 font"> Top Projects </h3>
-                <!-- Projects will be injected here by JS -->
-            </div>
-        </section>
-
-        <div class="container-fluid design-footer">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#0c0d0f" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path>
-            </svg>
-        </div>
-
-        <section class="footer">
-
-            <div class="container d-flex">
-
-                <div class="mx-auto">
-                    <p class="lead">
-                        Esakkivel Esakkiraja <br>
-                    </p>
-
-                    <ul class="list-inline lead">
-                        <li class="list-inline-item"> <a class='bx bxl-linkedin-square'
-                                href="https://www.linkedin.com/in/esakkivel-esakkiraja/" target="_blank"
-                                rel="noopener noreferrer"></a> </li>
-                        <li class="list-inline-item"> <a class='bx bxl-github' href="https://github.com/dotvignesh"
-                                target="_blank" rel="noopener noreferrer"></a>
-                        </li>
-                        <li class="list-inline-item"> <a class='bx bxl-twitter' href="https://twitter.com/DotVignesh"
-                                target="_blank" rel="noopener noreferrer"></a>
-                        </li>
-                        <li class="list-inline-item"> <a class='bx bx-mail-send' href="mailto:esakkivelvrs5@gmail.com"
-                                target="_blank" rel="noopener noreferrer"></a>
-                    </ul>
-
-                </div>
-
-            </div>
-        </section>
-
+<body class="bg-bg text-text">
+  <p class="sr-only">
+    Hey there 👋 I’m Esakkivel - an ML engineer and a Northeastern grad student that likes to build things that think.
+    I started by shipping Android apps at 12 to 21.5K+ users worldwide; now I’m engineering reasoning systems beyond
+    standard RL playbooks. Lately, I’ve built SFT and RL post-training pipelines for code search and rerankers, focusing
+    on the path from data → training → evaluation (and the tooling around it). I’m always excited to talk about
+    computers and AI. Love opportunities in hands-on ML and applied research that ships.
+  </p>
+  <!-- Sidebar (desktop) -->
+  <aside id="sidebar"
+    class="fixed inset-y-0 left-0 z-30 bg-panel border-r border-border transition-all md:translate-x-0 md:flex flex-col hidden md:block">
+    <div class="sidebar-header flex items-center gap-3 p-3">
+      <div
+        class="w-9 h-9 rounded-full overflow-hidden border border-border bg-panel-2 flex items-center justify-center shrink-0">
+        <img src="img/profile-pic-new.png" class="w-full h-full object-cover" onerror="this.style.display='none'"
+          alt="Profile" />
+      </div>
+      <div class="brand-box min-w-0">
+        <div id="ownerName" class="font-semibold truncate">Your Name</div>
+        <div id="ownerHandle" class="text-xs text-muted truncate">@dotvignesh</div>
+      </div>
+      <button id="collapseBtn" class="ml-auto shrink-0 rounded-lg border border-border w-9 h-9 grid place-items-center"
+        title="Collapse / Expand" aria-label="Toggle sidebar">
+        <i id="collapseIcon" class="fa-solid fa-angles-left text-base" aria-hidden="true"></i>
+      </button>
     </div>
+    <nav class="px-3 space-y-2">
+      <a id="newChat" href="#" class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-solid fa-message text-base" aria-hidden="true"></i>
+        <span class="label">New chat</span>
+      </a>
+      <a id="githubLink" href="https://github.com/dotvignesh" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-github text-base" aria-hidden="true"></i>
+        <span class="label">GitHub</span>
+      </a>
+      <a id="linkedinLink" href="https://www.linkedin.com/in/your-handle/" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-linkedin text-base" aria-hidden="true"></i>
+        <span class="label">LinkedIn</span>
+      </a>
+      <a id="twitterLink" href="https://twitter.com/dotvignesh" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-twitter text-base" aria-hidden="true"></i>
+        <span class="label">Twitter</span>
+      </a>
+      <!-- <a href="cv.pdf" target="_blank" class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">📄 <span class="label">CV / Resume</span></a> -->
+      <a id="emailLink" href="mailto:me@example.com"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-solid fa-envelope text-base" aria-hidden="true"></i>
+        <span id="emailLabel" class="label">me@example.com</span>
+      </a>
+    </nav>
+    <!-- <div class="mt-auto p-3 text-xs text-muted border-t border-border">Footer Placeholder.</div> -->
+  </aside>
 
+  <!-- Mobile sidebar -->
+  <aside id="mobileSidebar"
+    class="fixed inset-y-0 left-0 z-40 bg-panel border-r border-border transition-transform w-72 -translate-x-full md:hidden">
+    <div class="flex items-center gap-3 p-3">
+      <div
+        class="w-9 h-9 rounded-full overflow-hidden border border-border bg-panel-2 flex items-center justify-center shrink-0">
+        <img src="img/profile-pic-new.png" class="w-full h-full object-cover" onerror="this.style.display='none'"
+          alt="Profile" />
+      </div>
+      <div class="min-w-0">
+        <div id="mOwnerName" class="font-semibold truncate">Your Name</div>
+        <div id="mOwnerHandle" class="text-xs text-muted truncate">@dotvignesh</div>
+      </div>
+      <button id="mobileClose" class="ml-auto rounded-lg border border-border w-9 h-9 grid place-items-center"
+        title="Close" aria-label="Close sidebar">
+        <i class="fa-solid fa-xmark text-base" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="px-3 space-y-2">
+      <a id="mNewChat" href="#" class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-solid fa-message text-base" aria-hidden="true"></i>
+        <span>New chat</span>
+      </a>
+      <a id="mGithub" href="https://github.com/dotvignesh" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-github text-base" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
+      <a id="mLinkedIn" href="https://www.linkedin.com/in/your-handle/" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-linkedin text-base" aria-hidden="true"></i>
+        <span>LinkedIn</span>
+      </a>
+      <a id="mTwitter" href="https://twitter.com/dotvignesh" target="_blank"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-brands fa-twitter text-base" aria-hidden="true"></i>
+        <span>Twitter</span>
+      </a>
+      <!-- <a id="mCV" href="cv.pdf" target="_blank" class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">📄 <span>CV / Resume</span></a> -->
+      <a id="mEmail" href="mailto:me@example.com"
+        class="flex items-center gap-2 rounded-lg border border-border bg-panel-2 px-3 py-2">
+        <i class="fa-solid fa-envelope text-base" aria-hidden="true"></i>
+        <span id="mEmailLabel">me@example.com</span>
+      </a>
+    </nav>
+  </aside>
+  <div id="scrim" class="fixed inset-0 bg-black/40 z-30 hidden md:hidden"></div>
 
+  <!-- Top bar -->
+  <header class="sticky top-0 z-20 border-b border-border bg-bg/80 backdrop-blur">
+    <div id="topbarInner" class="h-12 flex items-center gap-3 px-3 md:pl-72 transition-[padding]">
+      <button id="burger" class="md:hidden rounded-lg border border-border w-9 h-9 grid place-items-center"
+        title="Menu">☰</button>
+      <div id="brandName" class="font-semibold pl-1 md:pl-2">Your Name</div>
+      <button id="themeToggle" class="ml-auto rounded-lg border border-border w-9 h-9 grid place-items-center"
+        title="Toggle theme">☀︎</button>
+    </div>
+  </header>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+  <!-- Main -->
+  <main id="mainWrap" class="min-h-screen md:ml-72 transition-[margin]">
+    <div id="messages" class="max-w-content mx-auto px-4 pt-4 pb-44 space-y-2"></div>
+  </main>
 
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
+  <!-- Composer -->
+  <div id="composerWrap"
+    class="fixed inset-x-0 bottom-0 md:pl-72 bg-gradient-to-b from-transparent to-bg pointer-events-none transition-[padding]">
+    <div class="pointer-events-auto max-w-content mx-auto px-4 pb-4 w-full">
+      <div id="chips" class="chips flex gap-2 mb-2 overflow-x-auto overflow-y-hidden snap-x snap-mandatory px-1"></div>
+      <div class="flex items-end gap-2 border border-border bg-panel rounded-2xl p-2">
+        <textarea id="input" placeholder="Ask about me.."
+          class="flex-1 min-w-0 bg-transparent text-text outline-none resize-none h-12 max-h-48 leading-6 placeholder:text-muted py-3 px-3"></textarea>
+        <button id="sendBtn" class="bg-accent text-white rounded-xl w-11 h-11 grid place-items-center"
+          aria-label="Send message"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"
+            fill="currentColor">
+            <path d="M5 4l14 8-14 8z" />
+          </svg></button>
+      </div>
+      <div class="text-center text-xs text-muted mt-1">Organic intelligence. Rest assured, I fail CAPTCHAs for fun.
+      </div>
+    </div>
+  </div>
 
-    <!-- Owl Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-
-    <script src="js/portfolio-data.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/render-portfolio.js"></script>
-
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7c9be147e66042018fe9c71fc4e0052d"}'></script><!-- End Cloudflare Web Analytics -->
-
+  <script src="js/site.js"></script>
 </body>
 
 </html>
