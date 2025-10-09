@@ -6,7 +6,7 @@ const SITE = {
   linkedinUrl: "https://www.linkedin.com/in/esakkivel-esakkiraja/",
   twitterUrl: "https://twitter.com/dotvignesh",
   email: "esakkiraja.e@northeastern.edu",
-  intro: `Hey there &#128075; \n I’m Esakkivel - an ML engineer and a Northeastern grad student that likes to build things that think. I started by shipping Android apps at 12 to 21.5K+ users worldwide; now I’m engineering reasoning systems beyond standard RL playbooks. \nLately, I’ve built SFT and RL post-training pipelines for code search and rerankers, focusing on the path from data → training → evaluation (and the tooling around it). I’m always excited to talk about computers and AI. \nLove opportunities in hands-on ML and applied research that ships.`,
+  intro: `Hey there \uD83D\uDC4B \n I’m Esakkivel - an ML engineer and a Northeastern grad student that likes to build things that think. I started by shipping Android apps at 12 to 21.5K+ users worldwide; now I’m engineering reasoning systems beyond standard RL playbooks. \nLately, I’ve built SFT and RL post-training pipelines for code search and rerankers, focusing on the path from data → training → evaluation (and the tooling around it). I’m always excited to talk about computers and AI. \nLove opportunities in hands-on ML and applied research that ships.`,
 };
 
 const DATA = {
@@ -602,7 +602,14 @@ function streamText(el, text, { speed = 5, rich = false } = {}) {
       finalize(false);
       return;
     }
-    const ch = content[i++];
+    const code = content.codePointAt(i);
+    if (code === undefined) {
+      finalize(false);
+      return;
+    }
+    const size = code > 0xFFFF ? 2 : 1;
+    const ch = content.slice(i, i + size);
+    i += size;
     if (ch === '\r') { return; }
     if (ch === '\n') {
       cursor.insertAdjacentHTML('beforebegin', '<br>');
