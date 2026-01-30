@@ -15,7 +15,10 @@ const DATA = {
       heading: "Northeastern University, Boston, MA — May, 2026",
       bullets: [
         "MS, Computer Science",
-        "GPA: 4.0"
+        "GPA: 4.0",
+        "Master’s Research: Exploring GFlowNets as an alternative for RL in multi-agent systems.",
+        "Graduate Teaching Assistantships: CS4100 Artificial Intelligence (Fall 2025, Spring 2026); CS5100 Foundations of Artificial Intelligence (Spring 2025).",
+        "Leadership: ACM Research Hour — lead weekly research paper discussions."
       ]
     },
     {
@@ -31,21 +34,22 @@ const DATA = {
       bullets: [
         "Built a multi-stage retrieval pipeline to reduce hallucinations in LLM-based code autocompletion, improving context-retrieval Top-K accuracy from ~48% to ~88%.",
         "Constructed a Knowledge Graph from ServiceNow metadata, cutting search space by ~59% and improving semantic search results with advanced indexing and LLM-powered query expansion.",
-        "Developed SFT+RL post-training pipelines with curated and synthetic data, ensuring robust out-of-distribution generalization, and trained a 0.6B reranker to outperform-8B performance with ~2.5x lower latency.",
-        `First-author <a href="https://www.arxiv.org/abs/2509.25716" target="_blank" rel="noopener noreferrer">publication</a> accepted at the GeCoIn Workshop, ECAI 2025, presenting the above methods and results.`
+        "Developed SFT + RL post-training pipelines with curated and synthetic data, ensuring robust out-of-distribution generalization, and trained a 0.6B reranker to outperform an 8B model with ~2.5x lower latency.",
+        `First-author <a href="https://www.arxiv.org/abs/2509.25716" target="_blank" rel="noopener noreferrer">publication</a> accepted at the GeCoIn Workshop (ECAI 2025), presenting the above methods and results.`,
+        "Won the “Best Paper, Customer Value” award at the internal NowAI Conference (5% acceptance rate; company-wide entries)."
       ]
     },
     {
-      heading: "Graduate Teaching Assistant, Khoury College Of Computer Sciences, Boston, MA — Jan. 2025 – Apr. 2025",
+      heading: "Graduate Teaching Assistant, Khoury College Of Computer Sciences, Boston, MA — Spring 2025; Fall 2025 – Spring 2026",
       bullets: [
-        "Assisted in teaching the graduate-level CS5100 Foundations of AI course for 130+ students."
+        "CS5100 Foundations of Artificial Intelligence (Spring 2025).",
+        "CS4100 Artificial Intelligence (Fall 2025, Spring 2026)."
       ]
     },
     {
       heading: "Research Intern, Anna University, Chennai, TN, India — Aug. 2023 – Dec. 2023",
       bullets: [
-        "Researched under Dr. R. Baskaran and M. S. Karthika Devi, developing a generalist reasoning language model through a novel Supervised-Fine-Tuning approach using synthetic CoT traces on STEM datasets.",
-        "Applied compute and cost-efficient methods to train 7B and 13B models, surpassing the then-SOTA performance on multiple benchmarks such as GSM8K (+7%) and ARC (+8%)."
+        "Trained 7B/13B LLMs to reason via SFT on synthetic STEM CoT with PEFT, yielding +4/+6% Winogrande/ARC-c gains vs. baseline with compute- and cost-efficient methods."
       ]
     },
     {
@@ -65,6 +69,24 @@ const DATA = {
     }
   ],
   projects: [
+    {
+      name: "mlx-lm (Apple MLX)",
+      summary: "Contributed gradient accumulation and streamlined the training step so users can scale global batch size beyond memory limits for more stable LLM training on Apple silicon.",
+      image: "img/mlx_logo.png",
+      alt: "mlx-lm contribution",
+      link: "https://github.com/ml-explore/mlx-lm/pull/511",
+      linkLabel: "GitHub",
+      tags: ["MLX", "Training", "Optimization"]
+    },
+    {
+      name: "Autonomous-Drone",
+      summary: "RL-based quadcopter navigation with custom gym-pybullet-drone environments and PPO/DDPG policies for obstacle and gate traversal, plus an RL+PID hybrid for robustness against reward hacking.",
+      image: "img/drone.png",
+      alt: "Autonomous drone RL project",
+      link: "https://github.com/dotvignesh/Autonomous-Drone",
+      linkLabel: "GitHub",
+      tags: ["RL", "PyBullet", "Stable-Baselines3"]
+    },
     {
       name: "CoCo — The Multi-Agent Data Consultant",
       summary: "Voice-first multi-agent data consultant that orchestrates research agents and assembles editable presentations on the fly for a given business problem.",
@@ -162,7 +184,7 @@ const DATA = {
     {
       heading: "ML & Data",
       columns: 2,
-      items: ["PyTorch", "Transformers", "SFT/RLHF", "RAG", "LoRA/PEFT", "GRPO", "vLLM", "NumPy", "pandas", "Weights & Biases"]
+      items: ["PyTorch", "Transformers", "SFT/RLHF", "Post-training", "RAG", "LoRA/PEFT", "NumPy", "pandas", "Weights & Biases"]
     },
     {
       heading: "Programming Languages",
@@ -172,10 +194,10 @@ const DATA = {
     {
       heading: "Backend & Platforms",
       columns: 2,
-      items: ["Spring Boot", "Node.js", "MySQL", "MongoDB", "Firebase"]
+      items: ["Spring Boot", "MySQL", "Firebase"]
     }
   ],
-  contact: () => `Reach out via <strong><a href="mailto:esakkiraja.e@northeastern.edu">email</a></strong><br>Or DM me on <strong><a href="https://www.linkedin.com/in/esakkivel-esakkiraja/" target="_blank" rel="noopener noreferrer">LinkedIn</a></strong>`,
+  contact: () => `Reach out via <strong><a href="mailto:${SITE.email}">email</a></strong><br>Or DM me on <strong><a href="${SITE.linkedinUrl}" target="_blank" rel="noopener noreferrer">LinkedIn</a></strong><br>`,
 };
 
 const QUICK_PROMPTS = [
@@ -700,7 +722,7 @@ function renderProjectCards(items) {
       : `<span class="project-card__link disabled">${escapeHTML(item.disabledLabel || 'Link unavailable')}</span>`;
     return `<div class="project-card" role="listitem">${image}<div class="project-card__body">${title}${summary}${tags}<div class="mt-auto flex items-center">${linkMarkup}</div></div></div>`;
   }).join('');
-  const intro = `<p class="project-scroll__intro">Here are a few projects I'm excited about:</p>`;
+  const intro = `<p class="project-scroll__intro">Here are a few projects and contributions I'm excited about:</p>`;
   return `<div class="project-scroll-wrap">${intro}<div class="project-scroll" role="list">${cards}</div></div>`;
 }
 function makeSections() {
