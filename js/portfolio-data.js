@@ -17,9 +17,9 @@ const workExperiences = [
     role: "Research Intern",
     period: "Aug. 2023 - Dec. 2023 · 4 mos",
     bullets: [
-      "Built generalist reasoning language model by supervised fine-tuning and internal CoT reasoning with STEM datasets",
-      "Used compute and cost-efficient fine-tuning method, to fine-tune 7B and 13B parameter models",
-      "We beat the SOTA performance of open-source and closed models on various reasoning benchmarks",
+      "Developed a generalist reasoning LLM using synthetic chain-of-thought traces on STEM data",
+      "Trained 7B and 13B models with compute-efficient fine-tuning methods",
+      "Outperformed baselines on GSM8K by 4.93% and MMLU by 2.38%",
     ],
   },
   {
